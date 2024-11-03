@@ -8,6 +8,7 @@ import ManageExpenses from "./screens/ManageExpenses";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { GlobalStyles } from "./constants/style";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
@@ -50,8 +51,8 @@ function ExpensesOverView() {
 
 export default function App() {
   return (
-    <>
-      <StatusBar style="auto" />
+    <GestureHandlerRootView>
+      <StatusBar style="light" />
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
@@ -64,6 +65,6 @@ export default function App() {
           <Stack.Screen name="ManageExpense" component={ManageExpenses} />
         </Stack.Navigator>
       </NavigationContainer>
-    </>
+    </GestureHandlerRootView>
   );
 }
