@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { FlatList } from "react-native-gesture-handler";
+import ExpenseItem from "./ExpenseItem";
 
 const renderExpenseItem = (itemData) => {
-  return <Text>{itemData.item.description}</Text>;
+  return <ExpenseItem {...itemData.item} />;
 };
 
 const ExpensesList = ({ expenses }) => {
