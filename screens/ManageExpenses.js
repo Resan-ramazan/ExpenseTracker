@@ -4,6 +4,8 @@ import IconButton from "../components/UI/IconButton";
 import { GlobalStyles } from "../constants/style";
 import Button from "../components/UI/Button";
 import { ExpensesContext } from "../store/expenses-context";
+import { TextInput } from "react-native-gesture-handler";
+import ExpenseForm from "../components/MangageExpense/ExpenseForm";
 
 const ManageExpenses = ({ route, navigation }) => {
   const expensesCtx = useContext(ExpensesContext);
@@ -43,6 +45,7 @@ const ManageExpenses = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
+      <ExpenseForm />
       <View style={styles.buttonContainer}>
         <Button style={styles.button} mode="flat" onPress={cancelHandler}>
           Cancel
