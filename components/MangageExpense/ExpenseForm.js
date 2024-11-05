@@ -91,6 +91,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
             value: inputs.date.value,
           }}
         />
+
       </View>
       <Input
         label="Description"
