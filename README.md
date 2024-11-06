@@ -21,7 +21,7 @@ To run this project locally, follow these steps:
 ## Screenshots
 
 ### Recent Expens Screen
-![Recent Expens](./assets/recent.png)
+![Recent Expens](../assets/recent.png)
 
 ### Add Expense Screen
-![Add Expense Screen](./assets/add.png)
+![Add Expense Screen](../assets/add.png)
