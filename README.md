@@ -18,10 +18,3 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    git clone https://github.com/Resan-ramazan/ExpenseTracker.git
-## Screenshots
-
-### Recent Expens Screen
-![Recent Expens](../assets/recent.png)
-
-### Add Expense Screen
-![Add Expense Screen](../assets/add.png)
